@@ -1,0 +1,75 @@
+* { /* com esse asterísco eu insiro essas características em todas as tags existentes, é como se fosse um reset, ou seja, nesse caso estou zerando a margem e o padding de tudo */
+    margin: 0;
+    padding: 0;
+}
+
+
+html, body {height: 100%;} /* com isso eu informo que tanto o html quanto o body terão altura de 100% da tela*/
+
+body{
+    background: rgb(54,77,204);
+    background: linear-gradient(172deg, rgba(54,77,204,1) 0%, rgba(0,0,0,1) 100%); /*cor em gradiente*/
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.avatar{
+    width: 90px;
+    border-radius: 100%;
+    border: 0 solid white;
+    box-shadow: 0 0 20px white;
+
+}
+
+h1 {
+    font-family: 'Architects Daughter', cursive;
+    font-weight: 100;
+    font-size: 30px;
+    margin-bottom:2PX;
+}
+
+h2 {
+    font-size: 18px;
+   }
+
+.profile {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social {
+    display: flex; /*com isso eu estou transformando essa tag em flex e ele tem alguns atributos, uma delas é que todos os itens dentro ficam lado a lado*/
+    /*justify-content: center; /*esse atributo irá justificar os itens do flex no centro*/
+    /*justify-content: space-between; /*esse atributo irá justificar os itens do flex no centro e colocar um espaço somente entre eles*/
+    justify-content: space-around; /*esse atributo irá adicionar um espaço ao redor deles, ou seja, tanto entre eles qnto na lateral*/
+    margin: 20px 0;
+    list-style: none; /*como se trata de uma lista, com isso eu removo aquelas bolinhas da lista*/
+}
+.social img {/*ao fazer isso eu atribuo algo dentro da classe social mas acesso apenas as imagens dentro delas*/
+    width: 33px;
+}
+
+.links-list {
+    list-style: none /*retirando a marcação de ícones*/
+}
+
+.links-list li a{
+       display: block; /*isso serve para transformar a tag "a" em um bloco como se fosse a div, pois naturalmente ela é tudo na mesma linha (inline)*/
+       background-color: white;
+       text-decoration: none; /*retirar o sublinhado do link*/
+       color: rgb(54,77,204);
+       padding: 13px 18px;
+       border-radius: 4px;
+       margin: 15px 20px;
+       font-weight: bolder; /*colocando a fonte em negrito*/
+       box-shadow: 0 0 7px white;
+       font-size: 14px;
+
+}
+.links-list li a span { /*veja que informo exatamente o caminho que está o span, pois se eu atribuir algo diretamente ao span irá mudar todos os span da página*/
+display: block; /*como o span tem comportamento inline eu transformo ele em um bloco, assim eu consigo por margem, padding, borda, etc*/
+margin-top: 5px;
+color: black;
+
+
+}
