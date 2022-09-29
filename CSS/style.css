@@ -1,35 +1,40 @@
 * { /* com esse asterísco eu insiro essas características em todas as tags existentes, é como se fosse um reset, ou seja, nesse caso estou zerando a margem e o padding de tudo */
     margin: 0;
     padding: 0;
+   
 }
 
 
-html, body {height: 100%;} /* com isso eu informo que tanto o html quanto o body terão altura de 100% da tela*/
+/**html, body {height: 100%} /* com isso eu informo que tanto o html quanto o body terão altura de 100% da tela*/
+
 
 body{
-    background: rgb(54,77,204);
-    background: linear-gradient(172deg, rgba(54,77,204,1) 0%, rgba(0,0,0,1) 100%); /*cor em gradiente*/
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(148,227,233,1) 100%) fixed ;
+    background-position: 100%;
     color: white;
     font-family: 'Raleway', sans-serif;
 }
 
 .avatar{
-    width: 90px;
+    width: 170px;
+    margin: 0;
     border-radius: 100%;
-    border: 0 solid white;
-    box-shadow: 0 0 20px white;
-
+    border: 0px solid rgb(241, 235, 235);
+    
 }
 
 h1 {
-    font-family: 'Architects Daughter', cursive;
+    font-family: 'Oswald', sans-serif;
     font-weight: 100;
-    font-size: 30px;
+    font-size: 40px;
     margin-bottom:2PX;
 }
 
 h2 {
-    font-size: 18px;
+    font-family: 'Oswald';
+    font-size: 25px;
+    
    }
 
 .profile {
@@ -70,6 +75,15 @@ h2 {
 display: block; /*como o span tem comportamento inline eu transformo ele em um bloco, assim eu consigo por margem, padding, borda, etc*/
 margin-top: 5px;
 color: black;
-
-
 }
+
+.artes {
+    list-style: none;
+    text-align: center;
+}
+
+.artes img {
+    width: 200px;
+    
+        
+ }
